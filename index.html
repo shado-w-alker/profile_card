@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+
+    <!-- Custom Font (Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Custom Script for time update -->
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="border-layer"></div>
+      <div class="first-cover"></div>
+
+      <div class="personal-details">
+        <div class="profilePicture">
+          <img
+            src="profile.jpg"
+            alt="Profile Picture"
+            data-testid="profilePicture"
+          />
+        </div>
+        <p class="fullName" data-testid="fullName">Mbah Emmanuel</p>
+      </div>
+
+      <div class="jobSummary">
+        <p class="jobTitle" data-testid="jobTitle">Frontend Developer</p>
+        <p class="bio" data-testid="shortBio">
+          I am a passionate frontend developer with a keen eye for design and
+          user experience. I specialize in building responsive and interactive
+          web applications using modern frameworks and technologies like HTML,
+          CSS, JavaScript, and React. With a strong focus on performance and
+          accessibility, I strive to create seamless digital experiences.
+          Constantly learning and evolving, I enjoy turning ideas into visually
+          appealing and functional web solutions.
+        </p>
+      </div>
+
+      <div class="contacts">
+        <div data-testid="currentLocation">
+          <ion-icon name="location"></ion-icon>
+          <p>Lagos, Nigeria</p>
+        </div>
+
+        <div data-testid="emailAddress">
+          <ion-icon name="at"></ion-icon>
+          <p>mecdiebere@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="socials" data-testid="socialLinks">
+        <a href="https://github.com/shado-w-alker/">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+
+        <a href="#">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+
+        <a href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a>
+      </div>
+
+      <p data-testid="currentTimeUTC" class="utc-time">
+        UTC Time: <span id="utc-time"></span>
+      </p>
+
+      <div class="border-layer2"></div>
+      <div class="first-cover2"></div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "profile-card",
+  "version": "1.0.0",
+  "description": "My Profile Card",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shado-w-alker/profile_card.git"
+  },
+  "keywords": [
+    "card",
+    "personal",
+    "card",
+    "card",
+    "profile"
+  ],
+  "author": "shadoWalker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shado-w-alker/profile_card/issues"
+  },
+  "homepage": "https://github.com/shado-w-alker/profile_card#readme"
+}

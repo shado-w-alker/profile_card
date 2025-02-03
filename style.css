@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  color: #fffcfc;
+  background-color: black;
+}
+
+.container {
+  width: 500px;
+  margin: 10px auto;
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.container::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 5px;
+  background: transparent;
+  border: 5px solid #555353;
+}
+
+.first-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 45%;
+  clip-path: polygon(71% 0, 0 0, 0 100%);
+  background-image: url(background.jpeg);
+  background-position: center;
+  border-top-left-radius: 10px;
+}
+
+.border-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 102%;
+  height: 46%;
+  background-color: brown;
+  clip-path: polygon(71% 0, 0 0, 0 100%);
+  border-top-left-radius: 10px;
+}
+
+.first-cover2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 70%;
+  height: 45%;
+  clip-path: polygon(100% 60%, 60% 100%, 100% 100%);
+  background-image: url(background.jpeg);
+  background-position: center;
+  border-bottom-right-radius: 10px;
+}
+
+.border-layer2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 74%;
+  height: 48%;
+  background-color: brown;
+  clip-path: polygon(100% 60%, 60% 100%, 100% 100%);
+  border-bottom-right-radius: 10px;
+}
+
+.personal-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profilePicture {
+  height: 200px;
+  width: 200px;
+  z-index: 200;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+img {
+  width: 100%;
+  border-radius: 50%;
+  border: 4px brown solid;
+}
+
+.fullName {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+.jobSummary {
+  margin-top: 20px;
+}
+
+.jobTitle {
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: brown;
+  font-size: 25px;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.bio {
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.contacts {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.contacts div {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  margin-bottom: 5px;
+  gap: 10px;
+}
+
+.contacts div ion-icon {
+  border: 3px solid brown;
+  font-size: 20px;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.socials {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  margin-bottom: 20px;
+}
+
+.socials ion-icon {
+  cursor: pointer;
+  font-size: 30px;
+  color: brown;
+}
+
+.utc-time {
+  font-weight: 500;
+  font-size: 12px;
+  font-style: italic;
+}
